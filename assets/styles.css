@@ -1,0 +1,474 @@
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Playwrite+DE+Grund+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background-color: #f3e7dc;
+    color: #3c0214;
+    height:auto;
+    min-height:100vh;
+}
+
+.container {
+    font-family: 'BBH';          
+    max-width: 65vw;             
+    margin-left: auto;           
+    margin-right: auto;                
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 2em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* KLEUREN */
+:root {
+  --bg: #f9f0f7;
+  --pink: #f6c1cc;
+  --cream: #ffd7f4;
+  --brown: #6b3e2e;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--brown);
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+}
+
+.logo {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 26px;
+}
+
+.nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--brown);
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background: linear-gradient(180deg, var(--cream), var(--bg));
+  border-radius: 0 0 80px 80px;
+}
+
+.hero-text h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background-color: var(--pink);
+  color: rgb(39, 0, 19);
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* HERO IMAGE */
+.hero-img img {
+  width: 320px;
+}
+
+/* WEEKS */
+.weeks {
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.weeks h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.week-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.week-card {
+  background-color: var(--cream);
+  width: 160px;
+  padding: 40px 20px;
+  border-radius: 30px;
+  font-family: 'Fredoka', sans-serif;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.week-card:hover {
+  transform: translateY(-8px);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+}
+.process {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.process h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.weeks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.week-card {
+  background-color: #ffeef7;
+  border-radius: 26px;
+  padding: 1.2rem;
+  text-decoration: none;
+  color: #260019;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.week-card img {
+  width: 100%;
+  height: 140px;   /* lager dan eerst */
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 0.8rem;
+}
+
+
+.week-card h3 {
+  margin: 0.4rem 0 0.2rem;
+  font-size: 1.1rem;
+}
+
+.week-card p {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+
+.week-card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  z-index: 5;
+}
+
+
+/* Optioneel: andere cards iets kleiner bij hover */
+.weeks:hover .week-card {
+  transform: scale(0.96);
+  opacity: 0.7;
+}
+
+.weeks .week-card:hover {
+  transform: scale(1.12);
+  opacity: 1;
+}
+
+.process-intro {
+  text-align: center;
+  margin: 4rem 0 2rem;
+  opacity: 0.8;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 24px 40px;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #5a3a2e;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  padding: 100px 80px;
+  background-color: #ffebed;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.image-wrapper {
+  max-width: 380px; /* 👈 kleiner */
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 20%;
+}
+
+
+/* Vervaagde bovenkant */
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 230, 240, 1),
+    rgba(255, 230, 240, 0)
+  );
+  z-index: 1;
+}
+
+.hero-text {
+  margin-top: 50px; /* 👈 hoger zetten */
+}
+µ.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  gap: 40px;
+}
+
+.hero-tekst {
+  max-width: 500px;
+}
+
+.hero-afbeelding img {
+  width: 380px;
+  border-radius: 40px;
+}
+
+/* knoppen */
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-right: 10px;
+  background-color: #f7c1d9;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #f2a9c8;
+}
+
+.weken-section {
+  padding: 60px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.weken-carousel {
+  display: flex;
+  gap: 30px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+/* week kaart */
+.week-card {
+  min-width: 220px;
+  height: 260px;
+  background-color: #fdecef;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* hover effect (groter worden) */
+.week-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.week-card h3 {
+  margin-top: 20px;
+}
+
+.week-card p {
+  opacity: 0.7;
+}
+
+/* pijltjes */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: #9c6b7a;
+  padding: 10px;
+}
+
+.arrow:hover {
+  color: #000;
+}
+
+.weken-carousel {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto; /* ❗ MOET auto zijn */
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+.weken-carousel::-webkit-scrollbar {
+  display: none; /* scrollbar verbergen */
+}
+
+.week-card {
+  min-width: 220px;
+  height: 260px;
+  background-color: #e6d3dc;
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.week-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* WEEK PAGINA */
+
+.week-header {
+  padding: 60px;
+  text-align: left;
+}
+
+.week-header h1 {
+  font-size: 20px;
+}
+
+.week-subtitle {
+  opacity: 0.6;
+  font-size: 18px;
+}
+
+/* terug link */
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #9e7682;
+  font-size: 24px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  
+}
+
+/* content */
+.week-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* sections */
+.week-section {
+  background-color: #FFF2F8;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.week-section h2 {
+  margin-bottom: 10px;
+}
+
+.week-section ul {
+  padding-left: 20px;
+}
+
+.week-section img {
+  width: 100%;
+  max-width: 500px;   /* 👉 bepaalt hoe groot hij maximaal wordt */
+  height: auto;
+  display: block;
+  margin: 20px auto;  /* mooi gecentreerd */
+  border-radius: 15px;
+}
+
+.week-section img {
+  width: 100%;
+  max-width: 500px;   /* 👉 bepaalt hoe groot hij maximaal wordt */
+  height: auto;
+  display: block;
+  margin: 20px auto;  /* mooi gecentreerd */
+  border-radius: 15px;
+}

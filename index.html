@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projectdocumentatie</title>
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/flexboxes.css">
+    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/typography.css">
+</head>
+<body>
+ 
+
+
+
+
+
+</div>
+
+
+
+  
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Sanaa Arkoubi</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">Sanaa Arkoubi</div>
+</header>
+
+
+<section class="hero">
+  <div class="hero-tekst">
+    <h1>Mijn project</h1>
+    <p class="subtitle">Het ontwerpproces van digitale treinschermen</p>
+
+    <p class="intro">
+      Op deze website laat ik mijn ontwerpproces zien voor digitale
+      treinschermen. Je kunt hier zien wat ik elke week heb gedaan en het eindresultaat bekijken van mijn werk.
+    </p>
+
+    <div class="buttons">
+      <a href="https://www.figma.com/design/31q5Ewh8DqgLTbd9W5TXXv/Untitled?node-id=0-1&p=f&t=46Kr3arDofjf3sFh-0" class="btn">Bekijk mijn werk <link rel="stylesheet"</a>
+
+      <a href="#weken" class="btn">Mijn weken</a>
+    </div>
+  </div>
+
+  <div class="hero-afbeelding">
+    <img src="public/assets/IMG/Img3.jpg" alt="Trein in een station met bloemen">
+  </div>
+</section>
+
+
+
+
+<section class="weken-section" id="weken">
+  <h2>Mijn proces</h2>
+
+  <div class="carousel-wrapper">
+       <button class="arrow left" id="leftArrow">‹</button>
+
+    <div class="weken-carousel" id="wekenCarousel">
+      <div class="week-card" onclick="location.href='Week 1.html'">
+        <h3>Week 1</h3>
+        <p>Low fidelity prototype</p>
+      </div>
+      <div class="week-card" onclick="location.href='Week 2.html'">
+        <h3>Week 2</h3>
+        <p>Mid fidelity prototype</p>
+      </div>
+      <div class="week-card" onclick="location.href='Week 3.html'">
+        <h3>Week 3</h3>
+        
+      </div>
+      <div class="week-card" onclick="location.href='Week 4.html'">
+        <h3>Week 4</h3>
+        
+      </div> 
+      <div class="week-card" onclick="location.href='Week 5.html'">
+        <h3>Week 5</h3>
+        <p>high fidelity prototype</p>
+      </div>
+      <div class="week-card" onclick="location.href='Week 6.html'">
+        <h3>Week 6</h3>
+        <p>Feedback</p>
+      </div>
+      <div class="week-card" onclick="location.href='Week 7.html'">
+        <h3>Week 7</h3>
+        <p>Uitleg</p>
+      </div>
+      <div class="week-card" onclick="location.href='Week 8.html'">
+        <h3>Week 8</h3>
+        <p>Figma</p>
+      </div> 
+      <div class="week-card" onclick="location.href='Week 9.html'">
+        <h3>Week 9</h3>
+        <p>bijwerking Figma</p>
+      </div>
+      <div class="week-card" onclick="location.href='Week 10.html'">
+        <h3>Week 10</h3>
+        <p>Website design</p>
+      </div>
+      <div class="week-card" onclick="location.href='Week 11.html'">
+        <h3>Week 11</h3>
+        <p>Flow Figma</p>
+      </div>
+      <div class="week-card" onclick="location.href='Week 12.html'">
+        <h3>Week 12</h3>
+        <p>bijwerking + Github</p>
+      </div> 
+    
+
+
+
+
+      <!-- voeg hier week 5 t/m 12 toe -->
+    </div>
+
+     <button class="arrow right" id="rightArrow">›</button>
+
+  </div>
+</section>
+
+<script>
+  const carousel = document.getElementById("wekenCarousel");
+  const leftArrow = document.getElementById("leftArrow");
+  const rightArrow = document.getElementById("rightArrow");
+
+  rightArrow.addEventListener("click", () => {
+    carousel.scrollLeft += 260;
+  });
+
+  leftArrow.addEventListener("click", () => {
+    carousel.scrollLeft -= 260;
+  });
+</script>
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  © 2025 Sanaa Arkoubi
+</footer>
+
+</body>
+</html>
+
